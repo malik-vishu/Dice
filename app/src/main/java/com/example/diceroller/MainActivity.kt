@@ -55,7 +55,7 @@ fun DiceWithButton() {
             .wrapContentSize(Alignment.Center)
             , horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Image(painter = painterResource(id = imageDice), contentDescription = null)
+        Image(modifier = Modifier.size(250.dp),painter = painterResource(id = imageDice), contentDescription = null)
         Spacer(modifier = Modifier.height(10.dp))
         Button(onClick = { dice = (1..6).random() }) {
             Text(text = "Roll")
